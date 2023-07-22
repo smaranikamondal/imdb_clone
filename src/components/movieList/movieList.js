@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import "./movieList.css";
+// import "./movieList.css";
 import { useParams } from 'react-router-dom';
 import Cards from '../card/card';
 
@@ -23,9 +23,9 @@ const MovieList = () => {
     };
 
     return (
-        <div className="movie__list">
-            <h2 className="list__title">{(type ? type : "POPULAR").toUpperCase()}</h2>
-            <div className="list__cards">
+        <div className="pt-3 pr-3 pb-3 pl-3">
+            <h2 className="text-lg my-10">{(type ? type : "POPULAR").toUpperCase()}</h2>
+            <div className="flex flex-wrap justify-center">
                 {
                     movieList.map(movie => (
                         <Cards movie={movie} />
