@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header/header';
 import Home from './pages/home/home';
@@ -7,7 +7,7 @@ import Movie from './pages/movieDetail/movie';
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-black text-white font-sans min-h-screen">
       <Router>
         <Header />
         <Routes>
